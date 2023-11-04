@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddo420cq5cace"]
+
+[ext_resource type="Texture2D" uid="uid://dd14lk6yybf0f" path="res://tilesets/TileSetTest.png" id="1_2qut7"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oy34g"]
+texture = ExtResource("1_2qut7")
+texture_region_size = Vector2i(50, 50)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-25, -25, 25, -25, 25, 25, -25, 25)
+0:0/0/physics_layer_1/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_1/angular_velocity = 0.0
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-25, -25, 25, -25, 25, 25, -25, 25)
+1:0/0/physics_layer_1/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_1/angular_velocity = 0.0
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-25, -25, 25, -25, 25, 25, -25, 25)
+2:0/0/physics_layer_1/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_1/angular_velocity = 0.0
+3:0/0 = 0
+3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:0/0/physics_layer_0/angular_velocity = 0.0
+3:0/0/physics_layer_1/linear_velocity = Vector2(0, 0)
+3:0/0/physics_layer_1/angular_velocity = 0.0
+3:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-11.6673, -19.0919, -12.0208, 19.0919, 10.253, 19.4454, 9.8995, -18.7383)
+4:0/0 = 0
+4:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:0/0/physics_layer_0/angular_velocity = 0.0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-25, -25, 25, -25, 25, 25, -25, 25)
+4:0/0/physics_layer_1/linear_velocity = Vector2(0, 0)
+4:0/0/physics_layer_1/angular_velocity = 0.0
+3:1/0 = 0
+3:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:1/0/physics_layer_0/angular_velocity = 0.0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-25, -25, 25, -25, 25, 25, -25, 25)
+3:1/0/physics_layer_1/linear_velocity = Vector2(0, 0)
+3:1/0/physics_layer_1/angular_velocity = 0.0
+
+[sub_resource type="TileSet" id="TileSet_xgevy"]
+tile_size = Vector2i(50, 50)
+physics_layer_0/collision_layer = 1
+physics_layer_1/collision_layer = 2
+sources/0 = SubResource("TileSetAtlasSource_oy34g")
+
+[node name="TileMap" type="TileMap"]
+tile_set = SubResource("TileSet_xgevy")
+format = 2
+layer_0/name = "Foreground"
+layer_1/name = "Background"
+layer_1/enabled = true
+layer_1/modulate = Color(1, 1, 1, 1)
+layer_1/y_sort_enabled = false
+layer_1/y_sort_origin = 0
+layer_1/z_index = 0
+layer_1/tile_data = PackedInt32Array()
